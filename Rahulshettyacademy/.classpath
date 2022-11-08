@@ -17,6 +17,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Darmolyn/Downloads/testng-6.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/GIFT/eclipse-workspace/testng/testng-6.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

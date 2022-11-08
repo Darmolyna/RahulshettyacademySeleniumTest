@@ -15,7 +15,7 @@ public class synchronizationAssignment {
 
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Darmolyn\\Desktop\\Projects\\Drivers\\ChromeDriver\\chromedriver.exe");
+				"C:\\Users\\GIFT\\eclipse-workspace\\drivers\\chrome driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000)); //
