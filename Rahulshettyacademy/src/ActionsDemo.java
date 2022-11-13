@@ -26,7 +26,9 @@ public class ActionsDemo {
 
 		// moves to specific element and right click on the element(context click)
 		a.moveToElement(move).contextClick().build().perform();
-
+ 
+		
+		
 	}
 
 }
