@@ -20,7 +20,7 @@ public class WindowHandles {
 		Iterator<String> it = windows.iterator(); // iterating into windows
 		String parentId = it.next();
 		String childId = it.next();
-		driver.switchTo().window(childId); // switching into chiLd URL
+		driver.switchTo().window(childId); // switchinG into chiLd URL
 
 		String emailId = driver.findElement(By.xpath("//p[@class='im-para red']")).getText().split("at")[1].trim()
 				.split(" ")[0];
