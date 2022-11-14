@@ -26,7 +26,7 @@ public class WindowHandles {
 				.split(" ")[0];
 
 		System.out.println(emailId);
-		driver.switchTo().window(parentId); // switching to parent id
+		driver.switchTo().window(parentId); // switching to parent ID
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys(emailId);
 	}
 
