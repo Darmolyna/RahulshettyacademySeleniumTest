@@ -17,12 +17,17 @@ public class WindowHandles {
 		driver.findElement(By.xpath("//a[@class='blinkingText']")).click(); // after clicking, it opens another tab...
 																			// Tab is referred to as window in Selenium
 		Set<String> windows = driver.getWindowHandles(); // stores parent URL id and child URL id... [parentid, childid]
-		Iterator<String> it = windows.iterator(); //iterating into windows
+		Iterator<String> it = windows.iterator(); // iterating into windows
 		String parentId = it.next();
 		String childId = it.next();
-		driver.switchTo().window(childId); //switching into child URL
-		
-		driver.findElement(By.xpath("//p[@class='im-para red']"));
+		driver.switchTo().window(childId); // switching into child URL
+
+		String emailId = driver.findElement(By.xpath("//p[@class='im-para red']")).getText().split("at")[1].trim()
+				.split(" ")[0];
+
+		System.out.println(emailId);
+		driver.switchTo().window(parentId); // switching to parent id
+		driver.findElement(By.xpath("//input[@id='username']")).sendKeys(emailId);
 
 	}
 
